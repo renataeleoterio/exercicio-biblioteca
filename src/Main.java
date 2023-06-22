@@ -2,6 +2,9 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        int capacidadeLivros = (int)(Math.random() * 200 + 1);
+        Biblioteca biblioteca = new Biblioteca(capacidadeLivros);
+        int quant = (int) (Math.random() * 300) + 1;
 
 
     }
