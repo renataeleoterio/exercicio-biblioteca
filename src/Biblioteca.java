@@ -93,6 +93,21 @@ public class Biblioteca {
         return somaPrecos / contador;
     }
 
+    public Livro livroComMaiorTitulo(){
+        Livro livroMaiorTitulo = null;
+        //percorre o array de livros e compara o titulo do livro atual com o proximo titulo
+        for (Livro livro : livros) {
+            if (livro != null) {
+                if (livroMaiorTitulo == null || livro.getTitulo().length() > livroMaiorTitulo.getTitulo().length()){
+                    livroMaiorTitulo = livro;
+                } else {
+                    System.out.println("Não há livros na biblioteca!");
+                }
+            }
+        }
+        return livroMaiorTitulo;
+    }
+
     public Livro[] getLivros() {
         return livros;
     }
